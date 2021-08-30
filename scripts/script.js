@@ -4,6 +4,8 @@ const salida = document.querySelector('#salida');
 const storage = JSON.parse(localStorage.getItem('colorValue')) || '#ffffff';
 color.value = storage;
 
+const colorList = [];
+
 const setColor = () => {
     const select = color.value;
     salida.innerHTML = select;
